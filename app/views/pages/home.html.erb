@@ -1,1 +1,8 @@
-<h1>coucou</h1>
+<%= render "shared/navbar" %>
+<div class="banner" style="background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url(https://images.unsplash.com/photo-1593693044238-f14e5b164e75?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2232&q=80);">
+  <div class="container-banner">
+    <h1>Le Petit-championnat <strong>te permet de concourrir</strong> avec <strong>de supers championnats</strong>!</h1>
+    <p>Change ta vie et viens championner.</p>
+    <%= link_to 'Je vais voir ça', root_path , class: "btn btn-primary"%>
+  </div>
+</div>
