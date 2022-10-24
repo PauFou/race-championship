@@ -1,0 +1,10 @@
+<div class="form-container">
+  <h2>Edite ton championnat 🚀</h2>
+  <%= simple_form_for(@championship) do |f| %>
+    <div class="form-inputs">
+      <%= f.input :title, placeholder: 'Votre championship...' %>
+      <%= f.input :description, placeholder: 'Votre championship détaillé...' %>
+      <%= f.submit "Poster votre championship", class: "btn btn-primary" %>
+    </div>
+  <% end %>
+</div>
