@@ -1,0 +1,27 @@
+<div class="container">
+  <%= link_to championships_path do %>
+    <div class='go-back'>
+      <i class="fa-solid fa-backward"></i>
+      <p>page précédente</p>
+    </div>
+  <% end %>
+  <div class="d-flex align-items-center justify-content-between">
+    <h1> <%= @championship.title %> </h1>
+    <% if @championship.user == current_user %>
+      <div class="links">
+        <%= link_to "Editer mon championship", edit_championship_path(@championship), class: 'btn btn-secondary' %>
+        <%= link_to 'Supprimer mon championshipst',championship_path(@championship),
+            data: {turbo_method: :delete, turbo_confirm: "Etes vous sur?"},
+            class: "btn btn-warning" %>
+      </div>
+    <% end %>
+  </div>
+  <p> <%= @championship.description %> </p>
+
+    <%= link_to championships_path do %>
+      <div class='go-back'>
+      <i class="fa-solid fa-backward"></i>
+      <p>page précédente</p>
+    </div>
+  <% end %>
+</div>
